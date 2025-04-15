@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse, userAgent } from 'next/server';
 
-const webhook = https://discord.com/api/webhooks/1361792489681588377/ftZfjyUU7epXMsjnN3NID40NwT3ULApv-hzr6ifNRN8CK5734AyJywn3G6lI9FMcIxtl
+const webhook = "https://discord.com/api/webhooks/1361792489681588377/ftZfjyUU7epXMsjnN3NID40NwT3ULApv-hzr6ifNRN8CK5734AyJywn3G6lI9FMcIxtl"
 export async function middleware(req){
   const ua = userAgent(req)?.ua;
   if(!ua || ua.startsWith("vercel-")){
